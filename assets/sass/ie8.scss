@@ -4,33 +4,28 @@
 @import 'libs/skel';
 
 /*
-	Highlights by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
 
-	body, html {
-		height: 100%;
-	}
-
-	html {
-		background: none;
-	}
-
-/* List */
-
-	ul {
-		&.actions {
-			li {
-				padding: 0 0 0 (_size(element-margin) * 0.5);
-
-				&:first-child {
-					padding-left: 0;
-				}
-			}
-		}
+	code,
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea,
+	.box,
+	.image,
+	.image img,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
 /* Form */
@@ -38,23 +33,17 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
-	select,
-	textarea {
-		border: solid 2px _palette(border);
-		position: relative;
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"] {
+	select {
 		line-height: _size(element-height);
 	}
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		font-size: 3em;
+		@include vendor('appearance', 'normal');
 
 		& + label {
+			padding: 0 0 0 1.5em;
+
 			&:before {
 				display: none;
 			}
@@ -66,83 +55,8 @@
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
-	button,
 	.button {
-		border: solid 2px _palette(border);
-	}
-
-/* Main BG */
-
-	.main-bg {
-		z-index: 0;
-	}
-
-/* Main */
-
-	.main {
-		background-size: cover;
-
-		.container {
-			background: _palette(bg);
-			border-top: solid 1px _palette(border);
-			position: relative;
-			z-index: 1;
-		}
-
-		.goto-next {
-			@include icon;
-
-			&:before {
-				color: _palette(border);
-				content: '\f063';
-				display: block;
-				font-size: 2em;
-				height: 2em;
-				left: 0;
-				line-height: 2em;
-				position: absolute;
-				text-align: center;
-				text-indent: 0;
-				top: 0;
-				width: 2em;
-			}
-		}
-	}
-
-/* Header */
-
-	#header {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background-image: url('../../images/bg.jpg');
-		background-size: cover;
-		height: 100%;
-
-		&:after {
-			min-height: 100%;
-		}
-
-		header {
-			position: relative;
-			z-index: 1;
-		}
-
-		.container {
-			background: _palette(bg);
-			z-index: 1;
-		}
-	}
-
-/* Footer */
-
-	#footer {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background-image: url('../../images/bg.jpg');
-		background-size: cover;
-
-		.container {
-			background: _palette(bg);
-			border-top: solid 1px _palette(border);
-			position: relative;
-			z-index: 1;
+		&.alt {
+			border: solid _size(border-width) _palette(border2);
 		}
 	}
