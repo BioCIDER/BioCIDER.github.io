@@ -1,9 +1,9 @@
 # Documentation
 
-We have written a full documentation with the details of the Resource contextualisation global functionality.
-You can access it here:
+We have written a full documentation with the details of the BioCIDER platform.
+You can access to it here:
 
-**[Resource contextualisation review](https://docs.google.com/document/d/1-AiAF37ZWDEBeovImfH08fcDxoZoEv8gKggXPr7LHHw/edit?usp=sharing)**
+**[BioCIDER - Resource contextualisation review](https://docs.google.com/document/d/1-AiAF37ZWDEBeovImfH08fcDxoZoEv8gKggXPr7LHHw/edit?usp=sharing)**
 
 Also, we have designed some diagrams to get a better idea of the project structure:
 
