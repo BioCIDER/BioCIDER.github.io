@@ -25,7 +25,7 @@
 					biociderContainer.removeChild(biociderContainer.firstChild);
 				}
 				// loading bioCIDER with new request
-				var bioCiderInstance = new BioCider('biocider-container',{'userTextIdContainer':'search-phrase'},{},{});
+				var bioCiderInstance = new BioCider('biocider-container',{'userTextClassContainer':'search-phrase-class'},{},{});
 				bioCiderInstance.draw();
 			}
 		</script>
@@ -151,7 +151,7 @@
 														<!--<li><a href="#" onclick="loadBioCIDERresults();" class="button special">Default</a></li>
 														<li><input type="button" class="special" value="Get results" /></li>
 														-->
-														<input type="text" name="search-phrase" id="search-phrase" value="" placeholder="Search phrase" />
+														<input type="text" class="search-phrase-class" name="search-phrase" id="search-phrase" value="" placeholder="Search phrase" />
 													</ul>
 												</div>
 												<div class="6u 12u(xsmall)">
