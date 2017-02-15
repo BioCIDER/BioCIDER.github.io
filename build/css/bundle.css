@@ -1,0 +1,713 @@
+
+/*  Containers */
+
+.global_container{
+    padding:1px;
+}
+
+.context_data_container {
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    position:relative;
+    display:table;
+    padding-top:3px;
+    float:left;
+}
+
+.context_data_container_row {
+    display:table-row;
+}
+
+
+.context_data_container_col_left {
+    width: 85%;
+    min-height: 1px;
+    display:table-cell;
+    text-align: left;
+}
+
+.context_data_container_col_right {
+    width: 15%;
+    min-height: 1px;
+    display:table-cell;
+}
+
+div.context_data_list{ 
+    text-align: left;
+    margin: 1px 1px 1px 1px;
+    display:inline-block;
+    width: 100%;
+}
+
+
+/** Normal elements */
+
+div.context_data_topics{ 
+    font-size: 85%;
+}
+
+a.context_data_title{
+}
+
+.external_link{
+    background: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/link_external.png') center right no-repeat;
+    background-size: 10px;
+    padding-right: 15px;
+}
+
+
+/* DATA ASPECT  */
+
+/* Maybe we are not going to show 'more_results'
+.context_more_resuts {
+    float: left;
+    padding-top: 2px;
+    text-align: right;
+    width: 100%;
+}*/
+
+div.expandable_div_internaldiv{
+    /*border: 1px dotted;*/
+    padding: 1px 5px 1px 5px;
+}
+
+a.expandable_div_title{
+    font-size: 85%;
+    font-style: italic;
+}
+
+p.expandable_detail{
+    font-size: 85%;
+    margin: 1px 0px 0px 3px;
+}
+
+span.training_material,span.elixir_registry{
+    font-size: 80%;
+}
+
+
+
+
+/* PAGE MANAGER */
+
+
+div.page_manager_container{
+    text-align:center;
+    margin: 3px 0px 3px 0px;
+}
+
+div.page_manager_status{
+    font-style: italic;
+}
+
+div.page_manager_nav{
+}
+
+.page_manager_component{
+    padding: 0px 5px 0px 5px;
+}
+
+/* END PAGE MANAGER */
+
+
+/* BUTTONS */
+
+
+div.button_container{
+    text-align:center;
+    display:table;
+    margin: 0 auto;
+    
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+div.buttons_row_container {
+    display : table-row;
+}
+div.buttons_cell_container {
+    display : table-cell;
+    /* default size */
+    width: 42px;
+    height: 42px;
+}
+
+div.buttons_underline_cell_container {
+    display : table-cell;
+    height: 5px;
+}
+
+a.button,
+.button a {
+    /* default size */
+	width: 34px;
+	height: 34px;
+}
+
+/* for IE */
+*:first-child+html a.button,
+*:first-child+html .button a {
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+
+
+/* Sizes */
+/* small */
+a.button.small,
+.button.small a {
+	width: 26px;
+	height: 26px;
+	font-size: 90%;
+}
+
+/* large */
+a.button.large,
+.button.large a {
+	width: 40px;
+	height: 40px;
+	font-size: 120%;
+}
+
+/* extra large */
+a.button.xl,
+.button.xl a {
+	width: 72px;
+	height: 72px;
+	font-size: 130%;
+}
+
+/* SQARED 3D STYLE */
+
+a.button.squared_3d,
+.button.squared_3d a {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -900em;
+	color: #333;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	
+	/* default button color */
+	background-color: #ececec;
+	border: solid 1px #b8b8b9;
+	
+	/* default box shadow */
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 rgba(0,0,0,.1);
+
+	/* default border radius */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+/* unpressed (embossed) style */
+a.button.squared_3d.unpressed,
+.button.squared_3d.unpressed a {
+	-webkit-box-shadow: inset 0 2px 0 rgba(255,255,255,.5), inset 0 -2px 0 rgba(0,0,0,.25), inset 0 -3px 0 rgba(255,255,255,.2), 0 2px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 2px 0 rgba(255,255,255,.5), inset 0 -2px 0 rgba(0,0,0,.25), inset 0 -3px 0 rgba(255,255,255,.2), 0 2px 0 rgba(0,0,0,.1);
+	box-shadow: inset 0 2px 0 rgba(255,255,255,.5), inset 0 -2px 0 rgba(0,0,0,.25), inset 0 -3px 0 rgba(255,255,255,.2), 0 2px 0 rgba(0,0,0,.1);
+
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+/* pressed style */
+a.button.squared_3d.pressed,
+.button.squared_3d.pressed a {
+	-webkit-box-shadow: inset 0 2px 3px rgba(0,0,0,.35);
+	-moz-box-shadow: inset 0 2px 3px rgba(0,0,0,.35);
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.35);
+	
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+/* END SQARED 3D STYLE */
+
+
+/* ROUND FLAT STYLE */
+
+a.button.round_flat,
+.button.round_flat a {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -900em;
+	color: #333;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	background-color: #ececec;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	border: solid 2px #b8b8b9;
+
+	/* no shadow*/
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* unpressed style */
+a.button.round_flat.unpressed,
+.button.round_flat.unpressed a {
+    border: solid 2px #E8E8E8;
+}
+
+/* pressed style */
+a.button.round_flat.pressed,
+.button.round_flat.pressed a {
+    border: solid 2px #B0B0B0;
+}
+
+/* END ROUND FLAT STYLE */
+
+
+
+/* ELIXIR STYLE */
+
+
+a.button.elixir,
+.button.elixir a {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -900em;
+	color: #333;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	
+	/* no shadow*/
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* unpressed style */
+a.button.elixir.unpressed,
+.button.elixir.unpressed a {
+}
+
+/* pressed style */
+a.button.elixir.pressed,
+.button.elixir.pressed a {
+}
+
+
+/* button icons */
+
+a.button.elixir.database,
+.button a.elixir.database {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/data_base_blue_s.png');
+}
+
+a.button.elixir.events,
+.button a.elixir.events {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/interoperability_s.png');
+}
+
+a.button.elixir.tools,
+.button a.elixir.tools {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/tools_blue_s.png');
+}
+
+a.button.elixir.training_material,
+.button a.elixir.training_material {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/training_material_blue_s.png');
+}
+
+a.button.elixir.workflow,
+.button a.elixir.workflow {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/workflow_gray_s.png');
+}
+
+
+
+
+/* END ELIXIR STYLE */
+
+
+
+/* ICONS ONLY STYLE */
+
+a.button.icons_only,
+.button.icons_only a {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -900em;
+	color: #333;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	
+	/* no shadow*/
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* unpressed style */
+a.button.icons_only.unpressed,
+.button.icons_only.unpressed a {
+}
+
+/* pressed style */
+a.button.icons_only.pressed,
+.button.icons_only.pressed a {
+}
+
+/* END ICONS ONLY STYLE */
+
+
+/* default hover */
+a.button:hover:after,
+.button a:button:after {
+	background-image: none;
+}
+a.button:button,
+.button a:button,
+a.button:button:after,
+.button a:button:after {
+	background-color: #f3f3f3;
+}
+
+
+/* button icons */
+
+a.button.database,
+.button a.database {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/data_base_gray_s.png');
+}
+
+a.button.events,
+.button a.events {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/events_gray_s.png');
+}
+
+a.button.tools,
+.button a.tools {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/tools_gray_s.png');
+}
+
+a.button.training_material,
+.button a.training_material {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/training_material_gray_s.png');
+}
+
+a.button.workflow,
+.button a.workflow {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/workflow_gray_s.png');
+}
+
+
+
+
+
+/* helps */
+span.button_help,
+.button_help span {
+	width: 34px;
+	height: 34px;
+	font-size: 70%;
+	font-style: italic;
+	line-height: 100%;
+	display: table-cell;
+	
+	text-decoration: none;
+	/*display: inline-table;*/
+	position: relative;
+	vertical-align: middle;
+	margin: 2px 2px 2px 2px;
+	
+}
+/* for IE */
+*:first-child+html span.button_help,
+*:first-child+html .button_help span {
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+.button_help {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* underlines */
+
+span.button_underline,
+.button_underline span {
+	width: auto;
+	height: 2px;
+	line-height: 100%;
+	display: table-cell;
+	background-color:gray;
+	
+}
+/* for IE */
+*:first-child+html span.button_underline,
+*:first-child+html .button_underline span {
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+/* RESOURCE TYPES */
+
+/*  resource type details
+Based on:
+CSS Social Icons
+By: Nick La (@nickla)
+http://webdesignerwall.com/tutorials/css-social-buttons
+*/
+
+/* circle style */
+span.resource_type.circle,
+.resource_type.circle span,
+span.resource_type.circle:before,
+.resource_type.circle span:before,
+span.resource_type.circle:after,
+.resource_type.circle span:after {
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+}
+
+
+/* resource type icons */
+span.resource_type.database,
+.resource_type span.database {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/data_base_gray_s.png');
+}
+
+span.resource_type.events,
+.resource_type span.events {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/events_gray_s.png');
+}
+
+span.resource_type.tools,
+.resource_type span.tools {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/tools_gray_s.png');
+}
+
+span.resource_type.training_material,
+.resource_type span.training_material {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/training_material_gray_s.png');
+}
+
+span.resource_type.workflow,
+.resource_type span.workflow {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/workflow_gray_s.png');
+}
+
+
+/* flat resource type details */
+span.flat_resource_type,
+.flat_resource_type span {
+	width: 36px;
+	height: 36px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -900em;
+	color: #333;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 0 2px 5px 0;
+	
+}
+/* for IE */
+*:first-child+html span.flat_resource_type,
+*:first-child+html .flat_resource_type span {
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+span.flat_resource_type.database,
+.flat_resource_type span.database {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/data_base_gray_s.png');
+}
+
+span.flat_resource_type.events,
+.flat_resource_type span.events {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/events_gray_s.png');
+}
+
+span.flat_resource_type.tools,
+.flat_resource_type span.tools {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/tools_gray_s.png');
+}
+
+span.flat_resource_type.training_material,
+.flat_resource_type span.training_material {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/training_material_gray_s.png');
+}
+
+span.flat_resource_type.workflow,
+.flat_resource_type span.workflow {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/workflow_gray_s.png');
+}
+
+
+
+
+/* ELIXIR resource type details */
+span.elixir_resource_type,
+.elixir_resource_type span {
+	width: 36px;
+	height: 36px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -900em;
+	color: #333;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 0 2px 5px 0;
+	
+}
+/* for IE */
+*:first-child+html span.elixir_resource_type,
+*:first-child+html .elixir_resource_type span {
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+span.elixir_resource_type.database,
+.elixir_resource_type span.database {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/data_base_blue_s.png');
+}
+
+span.elixir_resource_type.events,
+.elixir_resource_type span.events {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/interoperability_s.png');
+}
+
+span.elixir_resource_type.tools,
+.elixir_resource_type span.tools {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/tools_blue_s.png');
+}
+
+span.elixir_resource_type.training_material,
+.elixir_resource_type span.training_material {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/training_material_blue_s.png');
+}
+
+span.elixir_resource_type.workflow,
+.elixir_resource_type span.workflow {
+	background-image: url('https://raw.githubusercontent.com/BioCIDER/biojs-vis-context-data-unique-list/development/build/img/workflow_gray_s.png');
+}
+
+
+/*  Gray filters
+Based on:
+http://www.oloblogger.com/2012/09/imagenes-escala-grises-css.html
+*/
+/**
+.gray {
+    filter: url('#grayscale');*/ /* Versi—n SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+ /*   -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); */ /* Para cuando es est‡ndar funcione en todos */
+ /*   filter: Gray(); */ /* IE4-8 and 9 */
+ /*   
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}*/
+ /*
+.gray hover { 
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none;
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}*/
+
+.empty {
+    filter: url('#opacity'); /* Versi—n SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+    -webkit-filter: opacity(0.5);
+    -moz-filter: opacity(0.5);
+    -ms-filter: opacity(0.5);
+    -o-filter: opacity(0.5);
+    filter: opacity(0.5); /* Para cuando es est‡ndar funcione en todos */
+    /*filter: Gray(); */ /* IE4-8 and 9 */
+}
+
+
+/*
+img.context_help_img {
+	background-image: url(../img/question.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	width: 36px;
+	height: 36px;
+
+	text-indent: -900em;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 0 5px 5px 0;
+	
+}
+*/

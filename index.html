@@ -12,6 +12,24 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		<link href="build/css/bundle.css" rel="stylesheet">
+		<script src="build/biocider.js"></script>
+		
+		<script>
+			BioCider = require("biocider");
+			var loadBioCIDERresults = function(){
+				// cleaning of any previous result
+				var biociderContainer = document.getElementById('biocider-container');
+				while (biociderContainer.firstChild) {
+					biociderContainer.removeChild(biociderContainer.firstChild);
+				}
+				// loading bioCIDER with new request
+				var bioCiderInstance = new BioCider('biocider-container',{'userTextIdContainer':'title-search'},{},{});
+				bioCiderInstance.draw();
+			}
+		</script>
+		
 	</head>
 	<body>
 
@@ -27,7 +45,8 @@
 						<li><a href="#one" class="active">What is</a></li>
 						<li><a href="#two">Features</a></li>
 						<li><a href="#three">Success stories</a></li>
-						<!--<li><a href="#four">Contact</a></li>-->
+						<li><a href="#four">Try it!</a></li>
+						<!--<li><a href="#five">Contact</a></li>-->
 					</ul>
 				</nav>
 				<footer>
@@ -116,10 +135,66 @@
 									</div>
 								</div>
 							</section>
-
+					
 						<!-- Four -->
-						<!--
 							<section id="four">
+								<div class="container">
+									<h3>Try it!</h3>
+									<p>You can use now BioCIDER widget with any search phrase of your interest.</p>
+									<div class="features">
+										
+										<form method="post" action="#">
+											<div class="row uniform">
+												
+												<div class="6u 12u(xsmall)">
+													<ul class="actions">
+														<!--<li><a href="#" onclick="loadBioCIDERresults();" class="button special">Default</a></li>
+														<li><input type="button" class="special" value="Get results" /></li>
+														-->
+														<input type="text" name="title-search" id="title-search" value="" placeholder="Search phrase" />
+													</ul>
+												</div>
+												<div class="6u 12u(xsmall)">
+													<input type="button" onclick="loadBioCIDERresults();" class="special" value="Get results" />
+												</div>
+											</div>
+											
+											
+											<!--
+											<div class="row uniform">
+												<div class="12u">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+											</div>
+											<div class="row uniform">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+											-->
+											
+											
+										</form>
+									</div>
+									<div class="row uniform">
+										<div class="12u" id="biocider-container"></div>		
+									</div>
+								</div>
+							</section>
+					
+						
+						
+							<section id="six"></section>
+						
+							
+						<!-- Five -->
+						<!--
+						
+						
+							<section id="five">
 								<div class="container">
 									<h3>Contact Us</h3>
 									<p>Write us if you want more information about BioCIDER.</p>
@@ -145,10 +220,8 @@
 									</form>
 								</div>
 							</section>
-						-->
-							
-						<!-- Five -->
-						<!--
+						
+						
 							<section id="five">
 								<div class="container">
 									<h3>Elements</h3>
@@ -518,3 +591,7 @@
 
 	</body>
 </html>
+
+<script>
+
+</script>
