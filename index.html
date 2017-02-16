@@ -24,9 +24,26 @@
 				while (biociderContainer.firstChild) {
 					biociderContainer.removeChild(biociderContainer.firstChild);
 				}
+				// shows a rectangle to contain bioCIDER widget
+				var biociderSupercontainer = document.getElementById('biocider-supercontainer');
+				biociderSupercontainer.style.display = 'block';
+				
 				// loading bioCIDER with new request
-				var bioCiderInstance = new BioCider('biocider-container',{'userTextIdContainer':'search-phrase'},{},{});
+				var bioCiderInstance = new BioCider('biocider-container',{'userTextIdContainer':'search-phrase'},{'buttonsStyle':'SQUARED_3D'},{});
 				bioCiderInstance.draw();
+			};
+			
+			// to detect INTRO event into fieldtext
+			function introEventListener (evt) {
+				var eventReference = (typeof evt !== "undefined")? evt : event;
+				var keyCode = eventReference.keyCode;
+				if (keyCode === 13) {
+				  // The Enter key was pressed
+					loadBioCIDERresults();
+				}
+			}
+			window.onload = function(){
+				document.getElementById("search-phrase").addEventListener("keydown", introEventListener, false);
 			}
 		</script>
 		
@@ -137,50 +154,46 @@
 							</section>
 					
 						<!-- Four -->
-							<!-- 
+							 
 							<section id="four">
 								<div class="container">
 									<h3>Try it!</h3>
 									<p>You can use now BioCIDER widget with any search phrase of your interest.</p>
 									<div class="features">
 										
-										<form method="post" action="#">
-											<div class="row uniform">
-												
-												<div class="6u 12u(xsmall)">
-													<ul class="actions">
-														<!--<li><a href="#" onclick="loadBioCIDERresults();" class="button special">Default</a></li>
-														<li><input type="button" class="special" value="Get results" /></li>
-														-->
-						<!--
-														<input type="text" name="search-phrase" id="search-phrase" value="" placeholder="Search phrase" />
-													</ul>
-												</div>
-												<div class="6u 12u(xsmall)">
-													<input type="button" onclick="loadBioCIDERresults();" class="special" value="Get results" />
-												</div>
+										<div class="row uniform">
+											
+											<div class="6u 12u(xsmall)">
+												<ul class="actions">
+													<input type="text" name="search-phrase" id="search-phrase" value="" placeholder="Search phrase" />
+												</ul>
 											</div>
-											
+											<div class="6u 12u(xsmall)">
+												<!--<a href="#" onclick="loadBioCIDERresults();return false;" class="special button">Show results1</a>-->
+												<input type="button" class="special" value="Show results" onclick="loadBioCIDERresults()">
+											</div>
+										</div>
+																			
+										<div class="row uniform" >
+											<div class="12u"></div>
+										</div>
+										<div class="row box" id="biocider-supercontainer" style="display:none">
+											<div class="12u(xsmall)" id="biocider-container"></div>		
+										</div>
+									</div>
 									
-											
-											
-										</form>
-									</div>
-									<div class="row uniform">
-										<div class="12u" id="biocider-container"></div>		
-									</div>
 								</div>
 							</section>
 					
-						-->
+					
 						
 							<section id="six"></section>
 						
 							
 						<!-- Five -->
+						
+						
 						<!--
-						
-						
 							<section id="five">
 								<div class="container">
 									<h3>Contact Us</h3>
