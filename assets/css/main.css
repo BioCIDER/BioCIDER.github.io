@@ -1590,6 +1590,11 @@
 	p {
 		margin: 0 0 2.25em 0;
 	}
+	
+	#main * p {
+		
+		text-align: justify;
+	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #777;
@@ -2868,7 +2873,7 @@
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
-
+			
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
