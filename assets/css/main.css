@@ -2488,6 +2488,9 @@
 
 		#header > header {
 			padding: 3em;
+			height: 260px; /* same as the banner image */
+			display: block;
+			border-bottom: solid 2px #5ccfb0;
 		}
 
 			#header > header .avatar {
@@ -2527,6 +2530,7 @@
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			padding:4em 0 2em 0;
 		}
 
 			#header > nav ul li {
