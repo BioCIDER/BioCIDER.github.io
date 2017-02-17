@@ -1552,7 +1552,7 @@
 
 	body {
 		background: #fff;
-		background: #00CC66;
+		background: #009751;
 	}
 
 	body, input, select, textarea {
@@ -1733,7 +1733,7 @@
 
 	header.major h2 {
 		/*color: #4acaa8;*/
-		color:#00CC66;
+		color:#009751;
 		font-size: 3.5em;
 	}
 
@@ -1797,7 +1797,7 @@
 		select:focus,
 		textarea:focus {
 			/*border-color: #4acaa8;*/
-			border-color:#00CC66;
+			border-color:#009751;
 		}
 
 	.select-wrapper {
@@ -1908,7 +1908,7 @@
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
 			/*border-color: #4acaa8;*/
-			border-color:#00CC66;
+			border-color:#009751;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2102,7 +2102,7 @@
 
 				ul.feature-icons li:before {
 					/*background: #4acaa8;*/
-					background:#00CC66;
+					background:#009751;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -2390,7 +2390,7 @@
 		input[type="button"].special,
 		.button.special {
 			/*background-color: #4acaa8;*/
-			background-color:#00CC66;
+			background-color:#009751;
 			color: #ffffff !important;
 		}
 
@@ -2461,7 +2461,7 @@
 
 	#header {
 		/*background: #4acaa8;*/
-		background:#00CC66;
+		background: #009751;  /*#009751; */
 		color: #d1f1e9;
 		height: 100%;
 		position: fixed;
@@ -2495,7 +2495,7 @@
 			padding: 3em;
 			height: 260px; /* same as the banner image */
 			display: block;
-			border-bottom: solid 2px #5ccfb0;
+			border-bottom: solid 2px #00ab5c;
 		}
 
 			#header > header .avatar {
@@ -2539,7 +2539,7 @@
 		}
 
 			#header > nav ul li {
-				border-top: solid 2px #5ccfb0;
+				border-top: solid 2px #00ab5c;
 				display: block;
 				padding: 0;
 			}
@@ -2838,7 +2838,7 @@
 
 					#titleBar .toggle:before {
 						/*background: #4acaa8;*/
-						background:#00CC66;
+						background:#009751;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
